@@ -1,1 +1,1 @@
-# rsschool-cv
+https://farfique.github.io/rsschool-cv/cv
