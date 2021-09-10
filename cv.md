@@ -6,12 +6,15 @@ Frontend Developer
 
 ## Contact
 
-petunova@gmail.com
+**e-mail:** petunova@gmail.com
 
-www.linkedin.com/in/anna-mikhailova-dev (LinkedIn)
+**LinkedIn:** www.linkedin.com/in/anna-mikhailova-dev
+
+**GitHub** https://github.com/Farfique/
 
 ## Summary
-Maybe I’m a right candidate for you, if you’re looking for someone who:
+
+I think I’m the right candidate for you, if you’re looking for someone who:
 
 - is absolutely capable of independent work and doesn’t need constant checking and surveillance;
 - does care about her teammates and does her best not to let them down;
@@ -19,13 +22,23 @@ Maybe I’m a right candidate for you, if you’re looking for someone who:
 - loves to immerse herself in the world of logic, dependencies and patterns;
 - has seen projects and work processes from almost all perspectives: advertising and SMM, quality assurance, design, development and analytics.
 
-## Skills
+You are my dream employer if you:
 
-`Git` | `Javascript` | `HTML5` | `ES6` | `Figma` | `Vue.js` | `Vuex`
+- work on an IT project in one of these domains: time-management, project-management, e-learning or e-health. I do consider jobs from other spheres, but this is where my heart is;
+- don’t think stress is the best environment for productive teams;
+- give your employees the freedom to decide which hours to work.
 
-`SQL` | `CSS3` | `Typescript`
+## Top skills
+
+- [x] Javascript, ES6, Typescript
+- [x] Vue.js, Vuex
+- [x] HTML5, CSS3
+- [x] Figma
+- [x] SQL
+- [x] Adobe Illustrator, Adobe After Effects
 
 ## Code example
+~~Cannot reveal the title~~ kata solution on [codewars](https://www.codewars.com/):
 
 ``` javascript
 function game(n) {
@@ -38,8 +51,9 @@ function game(n) {
 #### Frontend Developer
 ##### November 2020 - June 2021 (8 months)
 
-- Currently working on web-app with Vue.js framework.
-- Created and implemented new design (using Figma, Vue 2, Vuex, Javascript, ES6, HTML5, CSS)
+- Supported old features and developed new ones for a web-app with Vue.js framework (Vue 2, Vuex, Vue Router).
+- Created and implemented new design (using Figma, Vue 2, Vuex, Javascript, ES6, HTML5, CSS).
+- Participated in backend development (Java, Spring, Swagger, PostgreSQL).
 
 ### Astrosoft Development
 #### QA Engineer
@@ -64,10 +78,10 @@ function game(n) {
 
 ## Education
 ### Basic education
-Higher School of Economics
-Master's degree, Applied Economics · (2004 - 2010)
-Université Paris X Nanterre
-Master's degree, Economie des Institutions · (2009 - 2010)
+#### Higher School of Economics
+##### Master's degree, Applied Economics · (2004 - 2010)
+#### Université Paris X Nanterre
+##### Master's degree, Economie des Institutions · (2009 - 2010)
 
 ### Course certifications
 #### React: Using Typescript
@@ -78,14 +92,27 @@ Master's degree, Economie des Institutions · (2009 - 2010)
 
 #### Responsive Web Design
 ###### freeCodeCamp | *Issued Apr 2021*
+###### [See credential](https://www.freecodecamp.org/certification/farfique/responsive-web-design)
 
+#### Web-designer
+###### Netology | *Issued Apr 2020*
+
+#### Mobile apps design
+###### Netology | *Issued 2020*
+
+#### UX-analytics
+###### Netology | *Issued 2020*
+
+<img src="./img/web-design-cert.png" alt="Web design certificate" width="300"/>
+<img src="./img/web-analytics-cert.png" alt="UX-analytics certificate" width="300"/>
+<img src="./img/mobile-apps-design-cert.png" alt="Mobile apps design certificate" width="300"/>
 
 
 ## English
+**B2** (Upper-Intermediate)
 
 ## Other languages
 - French (Professional Working) 
 - German (Limited Working) 
-- English (Professional Working) 
 - Russian (Native or Bilingual)
 
