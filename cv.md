@@ -8,9 +8,9 @@ Frontend Developer
 
 **e-mail:** petunova@gmail.com
 
-**LinkedIn:** www.linkedin.com/in/anna-mikhailova-dev
+**LinkedIn:** [www.linkedin.com/in/anna-mikhailova-dev](www.linkedin.com/in/anna-mikhailova-dev)
 
-**GitHub** https://github.com/Farfique/
+**GitHub:** [https://github.com/Farfique/](https://github.com/Farfique/)
 
 ## Summary
 
@@ -30,12 +30,12 @@ You are my dream employer if you:
 
 ## Top skills
 
-[x]  Javascript, ES6, Typescript
-[x]  Vue.js, Vuex
-[x]  HTML5, CSS3
-[x]  Figma
-[x]  SQL
-[x]  dobe Illustrator, Adobe After Effects
+-  Javascript, ES6, Typescript
+-  Vue.js, Vuex
+-  HTML5, CSS3
+-  Figma
+-  SQL
+-  Adobe Illustrator, Adobe After Effects
 
 ## Code example
 ~~Cannot reveal the title~~ kata solution on [codewars](https://www.codewars.com/):
@@ -80,37 +80,29 @@ function game(n) {
 ### Basic education
 #### Higher School of Economics
 ##### Master's degree, Applied Economics · (2004 - 2010)
-<br>
 
 #### Université Paris X Nanterre
 ##### Master's degree, Economie des Institutions · (2009 - 2010)
-<br>
 
 ### Course certifications
 #### React: Using Typescript
 ###### LinkedIn | *Issued Sep 2021*
-<br>
 
 #### Learning Typescript
 ###### LinkedIn | *Issued Sep 2021*
-<br>
 
 #### Responsive Web Design
 ###### freeCodeCamp | *Issued Apr 2021*
 ###### [See credential](https://www.freecodecamp.org/certification/farfique/responsive-web-design)
-<br>
 
 #### Web-designer
 ###### Netology | *Issued Apr 2020*
-<br>
 
 #### Mobile apps design
 ###### Netology | *Issued 2020*
-<br>
 
 #### UX-analytics
 ###### Netology | *Issued 2020*
-<br>
 
 <img src="./img/web-design-cert.png" alt="Web design certificate" width="300"/>
 <img src="./img/web-analytics-cert.png" alt="UX-analytics certificate" width="300"/>
