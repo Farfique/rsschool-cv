@@ -1,0 +1,67 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 150%;
+    font-size: 16px;
+    font-weight: 300;
+}
+main {
+    width: 70vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+#photo-image {
+    width: 100%;
+    height: auto;
+}
+
+aside {
+    background-color: aquamarine;
+}
+aside ul {
+    list-style-type: none;
+}
+#short-info {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.margin {
+    margin-top: 3rem;
+}
+article {
+    background-color: brown;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+h2 {
+    font-weight: 500;
+}
+h4 {
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+
+}
+.position-name {
+    margin-bottom: 0.3rem;
+}
+.smallcaps{
+    font-variant: small-caps;
+}
+.gray {
+    color: #444;
+}
+#ul-work {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.ul-work-item {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
