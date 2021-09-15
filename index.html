@@ -12,8 +12,10 @@
     <body>
         <main>
             <aside>
-                <section id="photo"><img id="photo-image" alt="Photo" src="./img/anna_mikh.jpeg"\></section>
-                <section id="short-info">
+                <div id="photo">
+                    <img id="photo-image" alt="Photo" src="./img/anna_mikh.jpeg">
+                </div>
+                <div id="short-info">
                     <section id="contacts">
                         <h2>Contact</h2>
                         <ul id="ul-contacts">
@@ -43,14 +45,12 @@
                             <li>Russian (Native or Bilingual)</li>
                         </ul>
                     </section>
-                </section>
+                </div>
                 
             </aside>
             <article>
-                <section id="title">
-                    <h1>Anna Mikhailova</h1>
-                    <h2 class="smallcaps gray no-border monserrat">FRONTEND DEVELOPER</h2>
-                </section>
+                <h1>Anna Mikhailova</h1>
+                <h2 class="smallcaps gray no-border monserrat">FRONTEND DEVELOPER</h2>
                 <section id="about" class="margin">
                     <h2>About</h2>
                     <p>I think I’m the right candidate for you, if you’re looking for someone who:</p>
@@ -116,13 +116,9 @@
                 <section id="code-example" class="margin">
                     <h2>Code example</h2>
                     <p>Random kata solution on <a target="_blank" href="https://www.codewars.com/">Codewars</a>:</p>
-                    <div class="code">
-                        <code>
-                        <span class="code-declaration-word">function</span> <span class="code-function">game</span>(<span class="code-variable">n</span>) {<br>
-                        <p class="left-padding"><span class="code-return">return</span> (<span class="code-variable">Math</span>.<span class="code-function">pow</span>(<span class="code-variable">n</span>,<span class="code-number">2</span>) % <span class="code-number">2</span>) ? [<span class="code-variable">Math</span>.<span class="code-function">pow</span>(<span class="code-variable">n</span>,<span class="code-number">2</span>), <span class="code-number">2</span>] : [<span class="code-variable">Math</span>.<span class="code-function">pow</span>(<span class="code-variable">n</span>,<span class="code-number">2</span>)/<span class="code-number">2</span>];</p>
-                        }
-                        </code>
-                    </div>
+                    <pre class="code"><code class="language-javascript">function game(n) {
+    return (Math.pow(n,2) % 2) ? [Math.pow(n,2), 2] : [Math.pow(n,2)/2];
+}</code></pre>
                 </section>
                 <section id="education" class="margin">
                     <h2>University education</h2>
@@ -141,42 +137,42 @@
                     <h2>Courses</h2>
                     <ul id="courses-list">
                         <li class="course-item">
-                            <img class="course-logo" alt="Logo" src="./img/linked-in-logo.jpeg"\>
+                            <img class="course-logo" alt="Logo" src="./img/linked-in-logo.jpeg">
                             <div class="course-item-main">
                                 <h4 class="course-name">React: Using Typescript</h4>
                                 <div class="course-data"><span class="course-company">LinkedIn</span> | <span class="gray">Issued Sep 2021</span></div>
                             </div>
                         </li>
                         <li class="course-item">
-                            <img class="course-logo" alt="Logo" src="./img/linked-in-logo.jpeg"\>
+                            <img class="course-logo" alt="Logo" src="./img/linked-in-logo.jpeg">
                             <div class="course-item-main">
                                 <h4 class="course-name">Learning Typescript</h4>
                                 <div class="course-data"><span class="course-company">LinkedIn</span> | <span class="gray">Issued Sep 2021</span></div>
                             </div>
                         </li>
                         <li class="course-item">
-                            <img class="course-logo" alt="Logo" src="./img/freecodecamp-logo.jpeg"\>
+                            <img class="course-logo" alt="Logo" src="./img/freecodecamp-logo.jpeg">
                             <div class="course-item-main">
                                 <h4 class="course-name">Responsive Web Design</h4>
                                 <div class="course-data"><span class="course-company">FreecodeCamp</span> | <span class="gray">Issued Apr 2021</span></div>
                             </div>
                         </li>
                         <li class="course-item">
-                            <img class="course-logo" alt="Logo" src="./img/netology-logo.png"\>
+                            <img class="course-logo" alt="Logo" src="./img/netology-logo.png">
                             <div class="course-item-main">
                                 <h4 class="course-name">Web-designer: effective website from idea to implementation</h4>
                                 <div class="course-data"><span class="course-company">Netology</span> | <span class="gray">Issued Apr 2020</span></div>
                             </div>
                         </li>
                         <li class="course-item">
-                            <img class="course-logo" alt="Logo" src="./img/netology-logo.png"\>
+                            <img class="course-logo" alt="Logo" src="./img/netology-logo.png">
                             <div class="course-item-main">
                                 <h4 class="course-name">Mobile apps design</h4>
                                 <div class="course-data"><span class="course-company">Netology</span> | <span class="gray">Issued 2020</span></div>
                             </div>
                         </li>
                         <li class="course-item">
-                            <img class="course-logo" alt="Logo" src="./img/netology-logo.png"\>
+                            <img class="course-logo" alt="Logo" src="./img/netology-logo.png">
                             <div class="course-item-main">
                                 <h4 class="course-name">UX-analytics: customer research and common sense</h4>
                                 <div class="course-data"><span class="course-company">Netoloy</span> | <span class="gray">Issued 2020</span></div>
@@ -192,7 +188,6 @@
             </footer>
         </main>
 
-        </body>
-
     </body>
+
 </html>

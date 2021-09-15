@@ -123,21 +123,6 @@ code{
     margin-top: 0.1rem;
     margin-bottom: 0.1rem;
 }
-.code-declaration-word{
-    color:rgb(100, 144, 240)
-}
-.code-return {
-    color: violet;
-}
-.code-number {
-    color:greenyellow;
-}
-.code-function {
-    color: yellow;
-}
-.code-variable{
-    color: aqua;
-}
 footer {
     grid-column-start: 1;
     grid-column-end: 3;
