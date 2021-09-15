@@ -7,8 +7,7 @@
         <link rel="stylesheet" href="./css/main.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Roboto+Mono:wght@300&family=Montserrat:wght@500&display=swap" rel="stylesheet">        
     </head>
     <body>
         <main>
@@ -50,7 +49,7 @@
             <article>
                 <section id="title">
                     <h1>Anna Mikhailova</h1>
-                    <h2 class="smallcaps gray">Frontend developer</h2>
+                    <h2 class="smallcaps gray no-border monserrat">FRONTEND DEVELOPER</h2>
                 </section>
                 <section id="about" class="margin">
                     <h2>About</h2>
@@ -74,7 +73,7 @@
                     <ul id="ul-work">
                         <li class="ul-work-item">
                             <div class="job-dates">2020.11 - 2021.06</div>
-                            <div>
+                            <div class="job-main-item">
                                 <h4 class="company-name">MIR</h4>
                                 <div class="position-name">Frontend Developer</div>
                                 <ul class="position-tasks-list">
@@ -86,7 +85,7 @@
                         </li>
                         <li class="ul-work-item">
                             <div class="job-dates">2013.04 - 2017.08</div>
-                            <div>
+                            <div class="job-main-item">
                                 <h4 class="company-name">Astrosoft Development</h4>
                                 <div class="position-name">QA Engineer</div>
                                 <ul class="position-tasks-list">
@@ -102,7 +101,7 @@
                         </li>
                         <li class="ul-work-item">
                             <div class="job-dates">2011.03 - 2013.04</div>
-                            <div>
+                            <div class="job-main-item">
                                 <h4 class="company-name">JSC Novgorod Glass Fiber Plant</h4>
                                 <div class="position-name">Development manager</div>
                                 <ul class="position-tasks-list">
@@ -115,23 +114,84 @@
                     </ul>
                 </section>
                 <section id="code-example" class="margin">
-
+                    <h2>Code example</h2>
+                    <p>Random kata solution on <a target="_blank" href="https://www.codewars.com/">Codewars</a>:</p>
+                    <div class="code">
+                        <code>
+                        <span class="code-declaration-word">function</span> <span class="code-function">game</span>(<span class="code-variable">n</span>) {<br>
+                        <p class="left-padding"><span class="code-return">return</span> (<span class="code-variable">Math</span>.<span class="code-function">pow</span>(<span class="code-variable">n</span>,<span class="code-number">2</span>) % <span class="code-number">2</span>) ? [<span class="code-variable">Math</span>.<span class="code-function">pow</span>(<span class="code-variable">n</span>,<span class="code-number">2</span>), <span class="code-number">2</span>] : [<span class="code-variable">Math</span>.<span class="code-function">pow</span>(<span class="code-variable">n</span>,<span class="code-number">2</span>)/<span class="code-number">2</span>];</p>
+                        }
+                        </code>
+                    </div>
                 </section>
                 <section id="education" class="margin">
                     <h2>University education</h2>
+                    <ul id="university-list">
+                        <li class="university-item">
+                            <h4 class="university-name">Higher School of Economics</h4>
+                            <div class="degree">Master's degree, Applied Economics · <span class="gray">(2004 - 2010)</span></div>
+                        </li>
+                        <li class="university-item">
+                            <h4 class="university-name">Université Paris X Nanterre</h4>
+                            <div class="degree">Master's degree, Economie des Institutions · <span class="gray">(2009 - 2010)</span></div>
+                        </li>
+                    </ul>
                 </section>
                 <section id="courses" class="margin">
                     <h2>Courses</h2>
+                    <ul id="courses-list">
+                        <li class="course-item">
+                            <img class="course-logo" alt="Logo" src="./img/linked-in-logo.jpeg"\>
+                            <div class="course-item-main">
+                                <h4 class="course-name">React: Using Typescript</h4>
+                                <div class="course-data"><span class="course-company">LinkedIn</span> | <span class="gray">Issued Sep 2021</span></div>
+                            </div>
+                        </li>
+                        <li class="course-item">
+                            <img class="course-logo" alt="Logo" src="./img/linked-in-logo.jpeg"\>
+                            <div class="course-item-main">
+                                <h4 class="course-name">Learning Typescript</h4>
+                                <div class="course-data"><span class="course-company">LinkedIn</span> | <span class="gray">Issued Sep 2021</span></div>
+                            </div>
+                        </li>
+                        <li class="course-item">
+                            <img class="course-logo" alt="Logo" src="./img/freecodecamp-logo.jpeg"\>
+                            <div class="course-item-main">
+                                <h4 class="course-name">Responsive Web Design</h4>
+                                <div class="course-data"><span class="course-company">FreecodeCamp</span> | <span class="gray">Issued Apr 2021</span></div>
+                            </div>
+                        </li>
+                        <li class="course-item">
+                            <img class="course-logo" alt="Logo" src="./img/netology-logo.png"\>
+                            <div class="course-item-main">
+                                <h4 class="course-name">Web-designer: effective website from idea to implementation</h4>
+                                <div class="course-data"><span class="course-company">Netology</span> | <span class="gray">Issued Apr 2020</span></div>
+                            </div>
+                        </li>
+                        <li class="course-item">
+                            <img class="course-logo" alt="Logo" src="./img/netology-logo.png"\>
+                            <div class="course-item-main">
+                                <h4 class="course-name">Mobile apps design</h4>
+                                <div class="course-data"><span class="course-company">Netology</span> | <span class="gray">Issued 2020</span></div>
+                            </div>
+                        </li>
+                        <li class="course-item">
+                            <img class="course-logo" alt="Logo" src="./img/netology-logo.png"\>
+                            <div class="course-item-main">
+                                <h4 class="course-name">UX-analytics: customer research and common sense</h4>
+                                <div class="course-data"><span class="course-company">Netoloy</span> | <span class="gray">Issued 2020</span></div>
+                            </div>
+                        </li>
+                    </ul>
                 </section>
-                <section id="Additional skills" class="margin">
-                    <h2>Additional skills</h2>
-                </section>
-
             </article>
+            <footer>
+                <div id="git-link"><a href="https://github.com/Farfique">My GitHub</a></div>
+                <p>&copy;2021</p>
+                <div id="rsschool-link"><a href="https://rs.school/js/"><img class="logo" alt="RSSchool Logo" src="./img/rsschooljs-logo-white.svg"></a></div>
+            </footer>
         </main>
-        <footer>
 
-        </footer>
         </body>
 
     </body>
