@@ -1,0 +1,149 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 150%;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: rgb(240, 232, 232);
+}
+li {
+    line-height: 200%;
+}
+main {
+    width: 70vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: max-content max-content;
+}
+#photo-image {
+    width: 100%;
+    height: auto;
+}
+
+aside {
+    background-color: white;
+}
+aside ul {
+    list-style-type: none;
+
+    padding: 0;
+}
+#short-info {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.margin {
+    margin-top: 3rem;
+}
+article {
+    background-color: white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+h1 {
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+.monserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+h2 {
+    font-weight: 500;
+    padding-bottom: 1rem;
+    border-bottom: 0.2rem solid #03668d;
+}
+h4 {
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+
+}
+.position-name {
+    margin-bottom: 0.3rem;
+}
+.smallcaps{
+    font-variant: small-caps;
+}
+.no-border {
+    border: none;
+}
+.gray {
+    color: rgb(100, 99, 99);
+}
+#ul-work, #university-list, #courses-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.ul-work-item {
+    padding-top: 0rem;
+    display: grid;
+    grid-template-columns: max-content 7fr;
+}
+.job-dates{
+
+    padding-right: 0.5rem;
+}
+.job-main-item {
+    padding-left: 1rem;
+}
+.position-name{
+    color:rgb(53, 53, 53);
+}
+.position-tasks-list{
+    margin-bottom: 1.5rem;
+}
+
+.university-item{
+    margin-bottom: 1rem;
+}
+.course-item{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+
+    margin-bottom: 1rem;
+}
+.course-logo{
+    margin-right: 1rem;
+    height: 4rem;
+    width: auto;
+}
+.code {
+
+    background-color: rgb(53, 53, 53);
+    color:rgb(240, 232, 232);
+    padding: 1rem;
+}
+code{
+    font-family: 'Roboto Mono', monospace;
+}
+.left-padding {
+    padding-left: 1rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+}
+footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin:0;
+}
+.logo {
+    height: 2rem;
+    width: auto;
+}
+#rsschool-link{
+    margin-right: 2rem;
+}
+#git-link{
+    margin-left: 2rem;
+}
+#git-link a{
+    color: white;
+}
