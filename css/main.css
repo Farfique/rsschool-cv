@@ -27,6 +27,14 @@ nav {
     padding-bottom: 1rem;
 
 }
+#nav-container{
+    width: 90vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+#menu__toggle, #menu-btn{
+    display: none;
+}
 #navigation {
     margin: 0 auto 0 auto;
     width: 90vw;
@@ -44,20 +52,66 @@ nav {
     color: white;
 }
 
+@media (max-width: 1024px){
+    #navigation {
+        visibility: hidden;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        padding-top: 5rem;
+        padding-left: 8rem;
+        padding-bottom: 1rem;
+        background-color: black;
+    }
+    #navigation li{
+        line-height: 250%;
+    }
+
+    #navigation li:hover {
+        font-weight: bold;
+    }
+
+    #menu__toggle {
+        display:inline;
+        opacity: 0;
+    }
+    #menu-btn{
+        position: fixed;
+        top: 1.5rem;
+        left: 8rem;
+        display: inline-block;
+        width: 32px;
+        height: 24px;
+        background-image: url("./../img/burger.svg");
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 2;
+    }
+    #menu__toggle:checked ~ #menu-btn {
+        background-image: url("./../img/close-icon.svg");
+    }
+    #menu__toggle:checked ~ #navigation {
+        visibility: visible;
+        left: 0;
+      }
+}
+
+
 
 main {
     width: 90vw;
     margin: 4rem auto 1rem auto;
-
     display: block;
 }
 
 /* Start screen */
 
 #title-article{
-    height: 100vh;
-    padding-left: 10%;
-    padding-right: 10%;
+    height: calc(100vh - 4rem);
+    padding-left: 8rem;
+    padding-right: 8rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 3rem;
@@ -74,15 +128,28 @@ main {
     grid-row: 1;
     margin-top: auto;
     margin-bottom: auto;
+    height: inherit;
 }
 #contacts {
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    padding-left: 4rem;
+    padding-right: 4rem;
     grid-column-start: 1;
     grid-column-end: 3;
 }
 
+#contacts a{
+    text-decoration: none;
+    color: white;
+}
+
 #photo-image {
     width: 100%;
-    height: auto;
+    height: inherit;
+    object-fit:cover;
+
 
 }
 #key-skills {
@@ -106,8 +173,77 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
+ @media (max-width: 1024px){
+    #title-article{
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    #ul-contacts{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    #contacts {
+        background-color: black;
+        color: white;
+        border-radius: 0px;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        margin-top: 2rem;
+    }
+ }
 
+ @media (max-width: 900px){
+    #title-article{
+        padding-left: 5rem;
+        padding-right: 5rem;
+        display: block;
+        height: fit-content;
+    }
+    #photo {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    #photo-image {
+        width: 100%;
+        height: 35vw;
+        object-fit:cover;
+        object-position: 0 20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 6rem;
+    
+    }
+    #main-info{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    #title{
+        margin-top: 1rem;
+    }
+
+
+ }
+
+ @media (max-width: 700px){
+    #title-article{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #photo-image {
+        width: 100%;
+        height: 55vw;
+    }
+ }
 
 #short-info {
     padding-left: 2rem;
@@ -115,6 +251,11 @@ main {
 }
 .margin {
     margin-top: 3rem;
+}
+
+
+#about {
+    margin-top: 8rem;
 }
 article {
     background-color: white;
@@ -136,6 +277,14 @@ h2 {
     padding-bottom: 1rem;
     border-bottom: 0.2rem solid #03668d;
 }
+h2::before { 
+    display: block; 
+    content: " "; 
+    margin-top: -5rem; 
+    height: 5rem; 
+    visibility: hidden; 
+    pointer-events: none;
+  }
 h3{
     margin-top:0;
 }
@@ -156,6 +305,9 @@ h4 {
 .gray {
     color: rgb(100, 99, 99);
 }
+
+/* Work experience */
+
 #ul-work, #university-list, #courses-list {
     list-style-type: none;
     margin: 0;
@@ -180,6 +332,8 @@ h4 {
     margin-bottom: 1.5rem;
 }
 
+/* Education */
+
 .university-item{
     margin-bottom: 1rem;
 }
@@ -194,6 +348,8 @@ h4 {
     height: 4rem;
     width: auto;
 }
+
+/* Code */
 .code {
 
     background-color: rgb(53, 53, 53);
@@ -208,6 +364,9 @@ code{
     margin-top: 0.1rem;
     margin-bottom: 0.1rem;
 }
+
+
+/* footer */
 footer {
     grid-column-start: 1;
     grid-column-end: 3;
