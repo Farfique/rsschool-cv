@@ -1,33 +1,114 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 150%;
     font-size: 16px;
     font-weight: 300;
     background-color: rgb(240, 232, 232);
+    margin: 0;
 }
 li {
     line-height: 200%;
 }
-main {
-    width: 70vw;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: max-content max-content;
+
+/* Navigation */
+nav {
+    top: 0;
+    position: fixed;
+    height: 2rem;
+    width: 100%;
+    font-size: 1.1rem;
+
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
 }
+#navigation {
+    margin: 0 auto 0 auto;
+    width: 90vw;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navigation a{
+    text-decoration: none;
+    color: white;
+}
+
+
+main {
+    width: 90vw;
+    margin: 4rem auto 1rem auto;
+
+    display: block;
+}
+
+/* Start screen */
+
+#title-article{
+    height: 100vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    grid-template-rows: calc(100vh - 6rem) 1fr;
+}
+#main-info{
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#photo {
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#contacts {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
 #photo-image {
     width: 100%;
     height: auto;
-}
 
-aside {
-    background-color: white;
 }
-aside ul {
+#key-skills {
+    padding: 0.5rem;
+    border: 0.1rem dashed purple;
+}
+#ul-skills{
     list-style-type: none;
-
+    margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
 }
+#ul-contacts{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 #short-info {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -41,10 +122,11 @@ article {
     padding-right: 2rem;
 }
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-top: 5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     font-weight: 700;
+    line-height: initial;
 }
 .monserrat{
     font-family: 'Montserrat', sans-serif;
@@ -53,6 +135,9 @@ h2 {
     font-weight: 500;
     padding-bottom: 1rem;
     border-bottom: 0.2rem solid #03668d;
+}
+h3{
+    margin-top:0;
 }
 h4 {
     margin-top: 0;

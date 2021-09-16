@@ -8,49 +8,58 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Roboto+Mono:wght@300&family=Montserrat:wght@500&display=swap" rel="stylesheet">        
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    
     </head>
     <body>
-        <main>
-            <aside>
+        <nav>
+            <ul id="navigation">
+                <li class="menu-item"><a href="#title">Skills</a></li>
+                <li class="menu-item"><a href="#about">About</a></li>
+                <li class="menu-item"><a href="#work-experience">Work Experience</a></li>
+                <li class="menu-item"><a href="#languages">Languages</a></li>
+                <li class="menu-item"><a href="#education">University</a></li>
+                <li class="menu-item"><a href="#courses">Courses</a></li>
+                <li class="menu-item"><a href="#code-example">Code Example</a></li>
+                <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
+            </ul>
+        </nav>
+        <main>            
+            <div id="title-article">
                 <div id="photo">
                     <img id="photo-image" alt="Photo" src="./img/anna_mikh.jpeg">
                 </div>
-                <div id="short-info">
-                    <section id="contacts">
-                        <h2>Contact</h2>
-                        <ul id="ul-contacts">
-                            <li>Veliky Novgorod, Russia</li>
-                            <li>petunova@gmail.com</li>
-                            <li><a href="www.linkedin.com/in/anna-mikhailova-dev)">LinkedIn</a></li>
-                            <li><a href="https://github.com/Farfique/">GitHub</a></li>
-                        </ul>
-                    </section>
-                    <section id="key-skills">
-                        <h2>Key skills</h2>
+                <div id="main-info">
+                    <h1 id="title">Anna Mikhailova</h1>
+                    <h2 id="position" class="smallcaps gray no-border monserrat">FRONTEND DEVELOPER</h2>
+                    <div id="key-skills">
                         <ul id="ul-skills">
-                            <li>Javascript, ES6, Typescript</li>
-                            <li>Vue.js, Vuex</li>
-                            <li>HTML5, CSS3</li>
+                            <li>Javascript</li>
+                            <li>ES6</li>
+                            <li>Typescript</li>
+                            <li>Vue.js</li>
+                            <li>Vuex</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
                             <li>Figma</li>
                             <li>SQL</li>
-                            <li>Adobe Illustrator, Adobe After Effects</li>
+                            <li>Adobe Illustrator</li>
+                            <li>Adobe After Effects</li>
                         </ul>
-                    </section>
-                    <section id="languages">
-                        <h2>Languages</h2>
-                        <ul>
-                            <li>English (Professional Working)</li>
-                            <li>French (Professional Working) </li>
-                            <li>German (Limited Working) </li>
-                            <li>Russian (Native or Bilingual)</li>
-                        </ul>
-                    </section>
+                    </div>
                 </div>
-                
-            </aside>
+                <div id="contacts">
+                    <ul id="ul-contacts">
+                        <li class="address">Veliky Novgorod, Russia</li>
+                        <li class="email">petunova@gmail.com</li>
+                        <li class="linkedin"><a href="www.linkedin.com/in/anna-mikhailova-dev)">LinkedIn</a></li>
+                        <li class="github"><a href="https://github.com/Farfique/">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
             <article>
-                <h1>Anna Mikhailova</h1>
-                <h2 class="smallcaps gray no-border monserrat">FRONTEND DEVELOPER</h2>
                 <section id="about" class="margin">
                     <h2>About</h2>
                     <p>I think I’m the right candidate for you, if you’re looking for someone who:</p>
@@ -113,13 +122,16 @@
                         </li>
                     </ul>
                 </section>
-                <section id="code-example" class="margin">
-                    <h2>Code example</h2>
-                    <p>Random kata solution on <a target="_blank" href="https://www.codewars.com/">Codewars</a>:</p>
-                    <pre class="code"><code class="language-javascript">function game(n) {
-    return (Math.pow(n,2) % 2) ? [Math.pow(n,2), 2] : [Math.pow(n,2)/2];
-}</code></pre>
+                <section id="languages">
+                    <h2>Languages</h2>
+                    <ul>
+                        <li>English (Professional Working)</li>
+                        <li>French (Professional Working) </li>
+                        <li>German (Limited Working) </li>
+                        <li>Russian (Native or Bilingual)</li>
+                    </ul>
                 </section>
+
                 <section id="education" class="margin">
                     <h2>University education</h2>
                     <ul id="university-list">
@@ -177,6 +189,28 @@
                                 <h4 class="course-name">UX-analytics: customer research and common sense</h4>
                                 <div class="course-data"><span class="course-company">Netoloy</span> | <span class="gray">Issued 2020</span></div>
                             </div>
+                        </li>
+                    </ul>
+                </section>
+                <section id="code-example" class="margin">
+                    <h2>Code example</h2>
+                    <p>Random kata solution on <a target="_blank" href="https://www.codewars.com/">Codewars</a>:</p>
+                    <pre class="code"><code class="language-javascript">function game(n) {
+    return (Math.pow(n,2) % 2) ? [Math.pow(n,2), 2] : [Math.pow(n,2)/2];
+}</code></pre>
+                </section>
+                <section id="portfolio">
+                    <h2>Portfolio</h2>
+                    <ul id="project-lists">
+                        <li class="project-item" id="project1">
+                            <h3>Project Title</h3>
+                            <p class="project-stack">HTML, CSS</p>
+                            <p class="project-description"></p>
+                        </li>
+                        <li class="project-item" id="project2">
+                            <h3>Project Title</h3>
+                            <p class="project-stack">HTML, CSS</p>
+                            <p class="project-description"></p>
                         </li>
                     </ul>
                 </section>
