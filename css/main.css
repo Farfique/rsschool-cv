@@ -332,6 +332,21 @@ h4 {
     margin-bottom: 1.5rem;
 }
 
+@media (max-width: 900px){
+    .ul-work-item {
+        padding-top: 0rem;
+        display: block;
+    }
+    .job-dates{
+        font-weight: bold;
+        color: #03668d;
+        padding-right: 0;
+    }
+    .job-main-item {
+        padding-left: 0;
+    }
+}
+
 /* Education */
 
 .university-item{
