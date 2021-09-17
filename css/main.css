@@ -1,33 +1,293 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 150%;
     font-size: 16px;
     font-weight: 300;
     background-color: rgb(240, 232, 232);
+    margin: 0;
 }
 li {
     line-height: 200%;
 }
-main {
-    width: 70vw;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: max-content max-content;
+
+/* Navigation */
+nav {
+    top: 0;
+    position: fixed;
+    height: 2rem;
+    width: 100%;
+    font-size: 1.1rem;
+    z-index: 500;
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
 }
+#nav-container{
+    width: 90vw;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+#menu__toggle, #menu-btn{
+    display: none;
+}
+#navigation {
+    margin: 0 auto 0 auto;
+    width: 90vw;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navigation a{
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 1024px){
+    #navigation {
+        visibility: hidden;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        padding-top: 5rem;
+        padding-left: 6rem;
+        padding-bottom: 1rem;
+        background-color: black;
+    }
+    #navigation li{
+        line-height: 250%;
+    }
+
+    #navigation li:hover {
+        font-weight: bold;
+    }
+
+    #menu__toggle {
+        display:inline;
+        opacity: 0;
+    }
+    #menu-btn{
+        position: absolute;
+        top: 0.5rem;
+        left: 6rem;
+        display: inline-block;
+        width: 32px;
+        height: 24px;
+        background-image: url("./../img/burger.svg");
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 2;
+    }
+    #menu__toggle:checked ~ #menu-btn {
+        background-image: url("./../img/close-icon.svg");
+    }
+    #menu__toggle:checked ~ #navigation {
+        visibility: visible;
+        left: 0;
+      }
+}
+
+@media (max-width: 900px){
+    #menu-btn{
+        left: 5rem;
+    }
+}
+@media (max-width: 700px){
+    #menu-btn{
+        left: 0rem;
+    }
+    #navigation {
+        padding-left: 2rem;
+    }
+}
+
+
+
+main {
+    width: 90vw;
+    margin: 4rem auto 1rem auto;
+    display: block;
+}
+
+#details{
+    font-family: 'Italianno', cursive;
+    font-size: 4rem;
+    color: #0c4862;
+    border: none;
+    margin-bottom: 3rem;
+    margin-top: 0rem;
+}
+
+/* Start screen */
+
+#title-article{
+    height: calc(100vh - 4rem);
+    padding-left: 8rem;
+    padding-right: 8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    grid-template-rows: calc(100vh - 6rem) 1fr;
+}
+#main-info{
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#photo {
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: inherit;
+}
+#contacts {
+    background-color: #0e4763;
+    color: white;
+    border-radius: 25px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#contacts a{
+    text-decoration: none;
+    color: white;
+}
+
 #photo-image {
     width: 100%;
-    height: auto;
-}
+    height: inherit;
+    object-fit:cover;
 
-aside {
-    background-color: white;
+
 }
-aside ul {
+#key-skills {
+    margin-top: 2rem;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    border: 0.1rem dashed purple;
+    position: relative;
+}
+#skills-title{
+    position: absolute;
+    top: -10%;
+    right: 10%;
+    font-family: 'Italianno', cursive;
+    font-style: italic;
+    font-weight: bold;
+    color: #0c4862;
+    font-size: 2rem;
+    background-color: #f0e7e8;
+}
+#ul-skills{
     list-style-type: none;
-
+    margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
 }
+#ul-skills li {
+    color: purple;
+    font-weight: bold;
+}
+#ul-contacts{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+ @media (max-width: 1024px){
+    #title-article{
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    #ul-contacts{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    #contacts {
+        border-radius: 0px;
+        padding-left: 4rem;
+        padding-right: 4rem;
+
+    }
+ }
+
+ @media (max-width: 900px){
+    #title-article{
+        padding-left: 5rem;
+        padding-right: 5rem;
+        display: block;
+        height: fit-content;
+    }
+    #photo {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    #photo-image {
+        width: 100%;
+        height: 35vw;
+        object-fit:cover;
+        object-position: 0 20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 6rem;
+    
+    }
+    #main-info{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    #title{
+        margin-top: 1rem;
+    }
+    #contacts {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-top: 2rem;
+    }
+
+ }
+
+ @media (max-width: 700px){
+    #title-article{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #photo-image {
+        width: 100%;
+        height: 55vw;
+    }
+ }
+
 #short-info {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -35,16 +295,23 @@ aside ul {
 .margin {
     margin-top: 3rem;
 }
+
+
+#about {
+    margin-top: 0rem;
+}
 article {
     background-color: white;
     padding-left: 2rem;
     padding-right: 2rem;
+    margin-top: 8rem;
 }
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-top: 5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     font-weight: 700;
+    line-height: initial;
 }
 .monserrat{
     font-family: 'Montserrat', sans-serif;
@@ -53,6 +320,18 @@ h2 {
     font-weight: 500;
     padding-bottom: 1rem;
     border-bottom: 0.2rem solid #03668d;
+}
+h2::before { 
+    display: block; 
+    content: " "; 
+    margin-top: -5rem; 
+    height: 5rem; 
+    visibility: hidden; 
+    pointer-events: none;
+  }
+h3{
+    margin-top:0;
+    display: inline-block;
 }
 h4 {
     margin-top: 0;
@@ -71,6 +350,9 @@ h4 {
 .gray {
     color: rgb(100, 99, 99);
 }
+
+/* Work experience */
+
 #ul-work, #university-list, #courses-list {
     list-style-type: none;
     margin: 0;
@@ -95,6 +377,23 @@ h4 {
     margin-bottom: 1.5rem;
 }
 
+@media (max-width: 900px){
+    .ul-work-item {
+        padding-top: 0rem;
+        display: block;
+    }
+    .job-dates{
+        font-weight: bold;
+        color: #03668d;
+        padding-right: 0;
+    }
+    .job-main-item {
+        padding-left: 0;
+    }
+}
+
+/* Education */
+
 .university-item{
     margin-bottom: 1rem;
 }
@@ -109,6 +408,8 @@ h4 {
     height: 4rem;
     width: auto;
 }
+
+/* Code */
 .code {
 
     background-color: rgb(53, 53, 53);
@@ -123,6 +424,73 @@ code{
     margin-top: 0.1rem;
     margin-bottom: 0.1rem;
 }
+
+/* portfolio */
+
+#portfolio{
+    margin-bottom: 1rem;
+}
+#project-lists {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+.project-link{
+    display: block;
+    width: inherit;
+    height: inherit;
+    position: relative;
+    color: white;
+
+}
+
+.project-image{
+    width: 100%;
+    height: auto;
+}
+
+.project-info {
+    width: 100%;
+    z-index: 400;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(rgb(0 0 0 / 0%), #000000);
+
+}
+
+.project-info p {
+    line-height: 30%;
+}
+
+.project-stack {
+    color: purple;
+    font-weight: bold;
+    padding-left: 1rem;
+}
+
+.project-description{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.padding-left {
+    padding-left: 1rem;
+}
+
+@media (max-width: 1024px){
+    #project-lists {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+/* footer */
 footer {
     grid-column-start: 1;
     grid-column-end: 3;
