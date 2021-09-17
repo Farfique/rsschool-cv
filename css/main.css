@@ -121,6 +121,15 @@ main {
     display: block;
 }
 
+#details{
+    font-family: 'Italianno', cursive;
+    font-size: 4rem;
+    color: #0c4862;
+    border: none;
+    margin-bottom: 3rem;
+    margin-top: 0rem;
+}
+
 /* Start screen */
 
 #title-article{
@@ -289,12 +298,13 @@ main {
 
 
 #about {
-    margin-top: 8rem;
+    margin-top: 0rem;
 }
 article {
     background-color: white;
     padding-left: 2rem;
     padding-right: 2rem;
+    margin-top: 8rem;
 }
 h1 {
     font-size: 4rem;
